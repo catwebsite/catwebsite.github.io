@@ -1,0 +1,131 @@
+<DOCTYPE HTML>
+<html>
+<head>
+<title>Kitten</title>
+</head>
+<body bgcolor="green">
+
+<img src="kitten.jpg" width="500" height="450">
+<h1> My favourite cat</h1>
+<p> Tess because she is wery fluffy cute and a nice cat </p>
+<p> There is no other cat as good as Tess </P>
+<h1> the folowing is a acurate represintation of the best cats in the world </h1>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Work', 8],
+  ['Eat', 2],
+  ['TV', 4],
+  ['Gym', 2],
+  ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Work', 8],
+  ['Eat', 2],
+  ['TV', 4],
+  ['Gym', 2],
+  ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Tess', 17],
+  ['other cats', 3],
+  ['my previous cats', 2],
+  ['big cats', 1],
+  ['kittens', 1]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Best cats in the world', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+<marquee SIZE=500><font size="5" face="Verdana"><b>Tess is good because tess is great</b></font></marquee>
+<canvas id="myCanvas" width="300" height="200"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<h2> Click on the button bellow to find out more reasons cats are good</h2>
+<button class="button"onclick="alert('kittens are nice and unlike dogs they dont kill people')">Click Me</button>
+<style>
+button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="30px Comic Sans MS";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText("i like cats ", canvas.width/2, canvas.height/2);
+
+</script>
+
+</body>
+</html>
